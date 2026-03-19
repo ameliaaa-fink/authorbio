@@ -1,34 +1,52 @@
 /* make comments within this syntax */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #ffd3f0;
   color: #333333;
 }
 .container {
   max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 100px;
+  margin-top: 50px;
+  background-color: #ffd3f0;
 }
 header {
   text-align: center;
   padding-bottom: 20px;
 }
 header img {
-  width: 150px;
-  border-radius: 50%;
+ width: 150px;
+ border: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
 }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  gap: 30px;
+  background: pink;
+  filter: drop-shadow(0 0 10px #ff3e60)
+}
+
 h1 {
   margin: 10px 0 5px;
   text-align: center;
   margin-bottom: 30px;
 }
 h2 {
-  color: #444444;
+  color: #89ed84
   border-bottom: 1px solid #cccccc;
   padding-bottom: 5px;
   margin-top: 30px;
@@ -37,7 +55,7 @@ ul {
   padding-left: 20px;
 }
 a {
-  color: #0077cc;
+  color: #2b5529;
   text-decoration: none;
 }
 a:hover {
@@ -53,7 +71,7 @@ a:hover {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #ffd3f0;
 }
 .article-grid {
   display: grid;
@@ -61,7 +79,7 @@ a:hover {
   gap: 20px;
 }
 .article-card {
-  background: #fdfdfd;
+  background: #ffd3f0;
   border: 1px solid #dddddd;
   border-radius: 8px;
   overflow: hidden;
@@ -96,8 +114,9 @@ a:hover {
 
 /* styling for header.html */
 .navbar {
-  width: 100%;
-  background-color: #333333;
+  width: 72%;
+  position: absolute;
+  background-color: #89ed84;
   color: white;
   padding: 10px 10px;
 }
@@ -116,7 +135,7 @@ a:hover {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: black;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -126,7 +145,7 @@ a:hover {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: white;
+      background: #ffd3f0;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       border-radius: 1rem;
       max-width: 800px;
@@ -155,7 +174,7 @@ a:hover {
       margin-top: 1rem;
     }
     .nav-buttons button {
-      background-color: #333333;
+      background-color: #89ed84;
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
@@ -163,5 +182,5 @@ a:hover {
       cursor: pointer;
     }
     .nav-buttons button:hover {
-      background-color: #555555;
+      background-color: #89ed84;
     }
